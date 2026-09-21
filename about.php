@@ -1,13 +1,31 @@
 <?php include 'includes/header.php'; ?>
 
 <!-- Page Header -->
-<div class="relative bg-brand-900 py-24 overflow-hidden">
+<div class="relative pt-32 pb-32 lg:pt-40 lg:pb-40 overflow-hidden bg-gray-900">
+    <!-- Background Image -->
     <div class="absolute inset-0">
-        <img src="assets/images/about.jpg" alt="About us background" class="w-full h-full object-cover opacity-20">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80" alt="Background" class="w-full h-full object-cover opacity-40">
     </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl font-extrabold text-white tracking-tight mb-4">About Cityview Medical</h1>
-        <p class="text-xl text-brand-100 max-w-3xl mx-auto">A legacy of excellence. A future of innovation. Discover the heart behind our healthcare.</p>
+    <!-- Gradient Overlay for Readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl" data-aos="fade-right">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/20 border border-brand-400/30 text-brand-300 text-sm font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+                Our Story
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 font-display">About Cityview Medical</h1>
+            <p class="text-xl text-gray-300 font-light leading-relaxed">A legacy of excellence. A future of innovation. Discover the heart behind our healthcare.</p>
+        </div>
+    </div>
+    
+    <!-- SVG Wave -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 translate-y-[1px]">
+        <svg class="relative block w-full h-[40px] md:h-[80px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path d="M0,160 C320,300 420,0 740,120 C1060,240 1280,60 1440,160 L1440,320 L0,320 Z" fill="#ffffff"></path>
+        </svg>
     </div>
 </div>
 
